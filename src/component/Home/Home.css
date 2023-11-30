@@ -1,0 +1,16 @@
+.home_car {
+    position: relative;
+    margin-bottom: 20px;
+}
+
+.home_car_text  {
+    position: absolute;
+    top: 15%;
+    left: 15%;
+    font-size: 200%;
+    color: var(--x-dark-color);
+}
+
+.carimg img {
+    height: 100vh;
+}
