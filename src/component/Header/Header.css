@@ -1,0 +1,98 @@
+@import url("../../assets/theme/theme.css");
+
+.taxLogo {
+    height: 10vh;
+    min-height: 40px;
+    padding: 5px 0px 5px 10px;
+}
+
+.headerNav {
+    height: calc(10vh + 10px);
+    min-height: 50px;
+    width: 100%;
+    background-image: linear-gradient(to bottom right, var(--x-light-color), var(--x-dark-color));
+
+    display: flex;
+    flex-direction: row;
+
+    box-shadow: 0px 10px 8px rgba(0, 0, 0, 0.3); /* Adjust the values as needed */
+    z-index: 1100;
+    position: sticky;
+    top: 0;
+}
+
+.navmenu {
+    margin: auto;
+    position: relative;
+    right: 10px;
+}
+
+.navmenu img {
+    height: 7vh;
+}
+
+.navbtn {
+    width: 9%;
+    height: 40px;
+    color: var(--x-light-color);
+    background-color: transparent;
+    border: 2px solid var(--x-light-color);
+    font-size: large;
+    box-shadow: 3px 3px rgba(0, 0, 0, 0.2);
+    margin: auto;
+    margin-right: 5px;
+}
+
+.navbtn:hover {
+    position: relative;
+    width: 9%;
+    height: 40px;
+    background-color: var(--x-light-color);
+    border: 1px solid var(--x-dark-color);
+    color: var(--x-dark-color);
+    font-weight: 700;
+}
+
+.menubtn {
+    width: 150px;
+    height: 40px;
+    color: var(--x-light-color);
+    background-color: var(--dark-color);
+    border: 2px solid var(--x-light-color);
+    font-size: large;
+}
+
+.menubtn:hover {
+    width: 150px;
+    height: 40px;
+    color: var(--x-light-color);
+    background-color: var(--x-dark-color);
+    border: 2px solid var(--x-light-color);
+    font-size: large;
+}
+
+.menulist {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    right: 1vh;
+    z-index: 110;
+}
+
+@media (max-width: 999px) {
+   .navbtn {
+    display: none;
+   }
+   .navmenu {
+    display: block;
+   }
+}
+
+@media (min-width: 1000px) {
+    .navbtn {
+     display: block;
+    }
+    .navmenu {
+     display: none;
+    }
+ }

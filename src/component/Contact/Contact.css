@@ -1,0 +1,93 @@
+@import url("../../assets/theme/theme.css");
+
+.contact_parallax {
+    /* The image used */
+    background-image: url("../../assets/images/contact.jpg");
+    height: 40vh;
+    min-height: 400px;
+
+    /* Create the parallax scrolling effect */
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.contact_parallax h1 {
+    position: relative;
+    top: 40%;
+    left: 20%;
+    font-family: 'Oswald', sans-serif;  
+    width: fit-content;
+    color: var(--x-dark-color);
+}
+
+.contact_container {
+    background-color: var(--x-light-color);
+}
+
+.dark_text {
+    color: var(--x-dark-color);
+}
+
+.dark_grid {
+    background-color: var(--x-dark-color);
+    height: 100%;
+    text-align: center;
+}
+
+.dark_grid form {
+    margin-bottom: 10px;
+}
+
+.light_grid {
+    text-align: center;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+
+.light_text {
+    color: var(--x-light-color);
+}
+
+.enq_input {
+    color: var(--x-light-color);
+}
+
+.enq_input label {
+    color: var(--x-light-color);
+}
+
+.enq_input input {
+    color: var(--x-light-color);
+}
+
+.maps {
+    width: 100%;
+    height: 70vh;
+    text-align: center;
+}
+
+.submitbtn {
+    width: 100px;
+    height: 40px;
+    margin: auto;
+    color: var(--x-light-color);
+    background-color: transparent;
+    border: 2px solid var(--x-light-color);
+    font-size: large;
+    box-shadow: 3px 3px rgba(0, 0, 0, 0.2)
+}
+
+.submitbtn:hover {
+    position: relative;
+    width: 100px;
+    height: 40px;
+    margin: auto;
+    background-color: var(--x-light-color);
+    border: 1px solid var(--x-dark-color);
+    color: var(--x-dark-color);
+    font-weight: 700;
+}

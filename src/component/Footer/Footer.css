@@ -1,0 +1,38 @@
+@import url("../../assets/theme/theme.css");
+
+.rootgrid {
+    padding: 16px;
+    background-image: linear-gradient(to bottom right, var(--x-light-color), var(--x-dark-color));
+    font-family: 'Oswald', monospace;
+}
+
+.copyright {
+    text-align: center;
+}
+
+.social_links {
+    display: flex;
+    position: relative;
+    width: 80%;
+}
+
+.social_span {
+    flex-direction: row;
+    flex-grow: 1;
+    text-align: center;
+}
+
+.social_span img {
+    width: 30px;
+    height: 30px;
+}
+
+.social_span img:hover {
+    width: 31px;
+    height: 31px;
+}
+
+.social_span h3 {
+    margin-top: 5px;
+    font-size: small;
+}
