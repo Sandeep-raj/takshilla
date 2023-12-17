@@ -1,0 +1,12 @@
+.register_root {
+    width: 90%;
+    margin: auto;
+    margin-top: 10px;
+}
+
+.register_form_content {
+    width: 90%;
+    margin: auto;
+    min-height: 300px;
+    padding-left: 20px;
+}

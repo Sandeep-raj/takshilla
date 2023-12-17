@@ -1,12 +1,17 @@
-.contact_root {
+.course_root {
     width: 100%;
     margin-top: 10px;
     margin-bottom: 40px;
 }
 
-.contact_parallax {
+.course_card {
+    margin: 20px;
+    box-shadow: 15px 10px 5px rgba(0, 0, 0, 0.2);
+}
+
+.course_parallax {
     /* The image used */
-    background-image: url("../../assets/images/contact.jpg");
+    background-image: url("../../assets/images/about.jpg");
     height: 40vh;
     min-height: 300px;
 
@@ -17,7 +22,7 @@
     background-size: cover;
 }
 
-.contact_parallax h1 {
+.course_parallax h1 {
     position: relative;
     top: 40%;
     left: 20%;
@@ -25,10 +30,4 @@
     font-size: 300%;
     width: fit-content;
     color: var(--x-dark-color);
-}
-
-.contact_enq_form {
-    width: 90%;
-    margin: auto;
-    padding: 10px;
 }

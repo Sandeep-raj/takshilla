@@ -1,124 +1,130 @@
-import { Container, Grid, TextField, Typography } from "@mui/material";
+import { Button, Grid, Paper, TextField, Typography } from "@mui/material";
 import "./Contact.css";
 import { useState } from "react";
+import { Padding } from "@mui/icons-material";
 
 const Contact = () => {
-  // State variables to store form data
-  const [name, setName] = useState("");
-  const [email, setEmail] = useState("");
-  const [phnno, setPhnno] = useState("");
-  const [message, setMessage] = useState("");
+  const [formData, setFormData] = useState({
+    fullname: "",
+    phonenumber: "",
+    emailid: "",
+    address: "",
+    query: "",
+  });
 
-  // Handle form submission
+  const handleInputChange = (e) => {
+    console.log(e);
+    const { name, value } = e.target;
+    setFormData((prevData) => ({
+      ...prevData,
+      [name]: value,
+    }));
+  };
+
   const handleSubmit = (e) => {
     e.preventDefault();
-    // You can handle the form data here (e.g., send it to a server)
-    console.log({ name, email, message });
-    // Reset form fields
-    setName("");
-    setEmail("");
-    setMessage("");
+    console.log("Form data submitted:", formData);
+    setFormData({
+      fullname: "",
+      phonenumber: "",
+      emailid: "",
+      address: "",
+      query: "",
+    });
   };
 
   return (
-    <div>
+    <div className="contact_root">
       <div className="contact_parallax">
         <Typography variant="h1">Contact Us</Typography>
       </div>
-      <Grid container className="contact_container">
-        <Grid item xs={12} sm={12} md={6} lg={6}>
-          <div className="light_grid">
-            <Typography variant="h1" className="dark_text">
-              We're Here
+      <div style={{ width: "90%", margin: "auto", marginTop: "30px" }}>
+        <Paper elevation={4}>
+          <div className="contact_enq_form">
+            <Typography
+              variant="h3"
+              textAlign={"center"}
+              style={{ padding: "5px" }}
+            >
+              Pen Your Questions
             </Typography>
-            <Typography variant="h4" className="dark_text">
-              Our door is always open for a cup of coffee
-            </Typography>
+            <form onSubmit={handleSubmit}>
+              <Grid container spacing={2}>
+                <Grid item xs={12}>
+                  <TextField
+                    fullWidth
+                    label="Full Name"
+                    name="fullName"
+                    value={formData.fullname}
+                    onChange={handleInputChange}
+                    required
+                  />
+                </Grid>
 
-            <div style={{ flexGrow: 0.9 }}></div>
+                <Grid item xs={12}>
+                  <TextField
+                    fullWidth
+                    label="Phone Number"
+                    name="phoneNumber"
+                    value={formData.phonenumber}
+                    onChange={handleInputChange}
+                    required
+                  />
+                </Grid>
 
-            <Typography variant="h2" className="dark_text">
-              Our Office
-            </Typography>
-            <Typography variant="h6" className="dark_text">
-              Opp.-Govt. Girls High school, <br></br> Ashok Rajpath Rd,{" "}
-              <br></br> Patna, Bihar 800001
-            </Typography>
+                <Grid item xs={12}>
+                  <TextField
+                    fullWidth
+                    label="Email ID"
+                    name="emailid"
+                    value={formData.emailid}
+                    onChange={handleInputChange}
+                    required
+                  />
+                </Grid>
+
+                <Grid item xs={12}>
+                  <TextField
+                    fullWidth
+                    label="Student Address"
+                    name="adrress"
+                    value={formData.address}
+                    onChange={handleInputChange}
+                    required
+                  />
+                </Grid>
+
+                <Grid item xs={12}>
+                  <TextField
+                    fullWidth
+                    label="Query"
+                    name="query"
+                    value={formData.query}
+                    onChange={handleInputChange}
+                    required
+                    rows={5}
+                    multiline
+                  />
+                </Grid>
+
+                <Grid item xs={12} style={{ marginBottom: 16 }} />
+
+                <Grid item xs={12}>
+                  <Button
+                    type="submit"
+                    fullWidth
+                    variant="contained"
+                    color="primary"
+                    style={{ marginTop: 20 }}
+                  >
+                    Send Enquiry
+                  </Button>
+                </Grid>
+              </Grid>
+            </form>
           </div>
-        </Grid>
-        <Grid item xs={12} sm={12} md={6} lg={6}>
-          <div className="dark_grid">
-            <Typography variant="h1" className="light_text">
-              Let's Talk
-            </Typography>
-            <Typography variant="h4" className="light_text">
-              Share your experience with us.
-            </Typography>
-
-            <div style={{ height: "30vh" }}></div>
-
-            <Container maxWidth="sm">
-              <Typography
-                variant="h2"
-                align="center"
-                className="light_text"
-                gutterBottom
-              >
-                Enquiry Form
-              </Typography>
-              <form onSubmit={handleSubmit}>
-                {/* Name input */}
-                <TextField
-                  label="Name"
-                  fullWidth
-                  margin="normal"
-                  value={name}
-                  className="enq_input"
-                  onChange={(e) => setName(e.target.value)}
-                />
-                {/* Email input */}
-                <TextField
-                  label="Email"
-                  fullWidth
-                  margin="normal"
-                  value={email}
-                  className="enq_input"
-                  onChange={(e) => setEmail(e.target.value)}
-                />
-                {/* Email input */}
-                <TextField
-                  label="Phone No."
-                  fullWidth
-                  margin="normal"
-                  value={phnno}
-                  className="enq_input"
-                  onChange={(e) => setPhnno(e.target.value)}
-                />
-                {/* Message input */}
-                <TextField
-                  label="Message"
-                  multiline
-                  fullWidth
-                  margin="normal"
-                  value={message}
-                  className="enq_input"
-                  onChange={(e) => setMessage(e.target.value)}
-                />
-                {/* Submit button */}
-                <button className="submitbtn">Submit</button>
-              </form>
-            </Container>
-          </div>
-        </Grid>
-        <Grid item xs={12} sm={12} md={12} lg={12}>
-          <iframe
-            title="location"
-            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3597.535800089688!2d85.13687307488055!3d25.620336977440896!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x39ed58504978e8f3%3A0x18cd15ae7d0e6cd!2sGolghar!5e0!3m2!1sen!2sin!4v1700314196477!5m2!1sen!2sin"
-            className="maps"
-            loading="lazy"
-          ></iframe>
-        </Grid>
-      </Grid>
+        </Paper>
+      </div>
     </div>
   );
 };

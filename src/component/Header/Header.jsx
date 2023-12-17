@@ -43,6 +43,22 @@ const Header = () => {
         </button>
         <button
           onClick={() => {
+            navigate({ pathname: "/register" });
+          }}
+          className="navbtn"
+        >
+          Register
+        </button>
+        <button
+          onClick={() => {
+            navigate({ pathname: "/faculty" });
+          }}
+          className="navbtn"
+        >
+          Faculty
+        </button>
+        <button
+          onClick={() => {
             navigate({ pathname: "/contact" });
           }}
           className="navbtn"
@@ -60,6 +76,22 @@ const Header = () => {
             className="menubtn"
           >
             About
+          </button>
+          <button
+            onClick={() => {
+              navigate({ pathname: "/register" });
+            }}
+            className="menubtn"
+          >
+            Register
+          </button>
+          <button
+            onClick={() => {
+              navigate({ pathname: "/faculty" });
+            }}
+            className="menubtn"
+          >
+            Faculty
           </button>
           <button
             onClick={() => {
