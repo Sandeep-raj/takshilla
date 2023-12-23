@@ -23,7 +23,6 @@ import {
   Button,
   Dialog,
   DialogContent,
-  DialogTitle,
   Divider,
   Grid,
   List,
@@ -82,14 +81,14 @@ const Home = () => {
       {/* Programs */}
       <div style={{ width: "100%", position: "relative", paddingTop: "20px" }}>
         <div style={{ width: "90%", margin: "auto" }}>
-          <h1>Our Courses</h1>
-          <h2>
+          <Typography variant="h4">Our Courses</Typography>
+          <Typography variant="h5">
             Experience a nurturing learning environment at Takshilla Classes,
             where excellence meets comfort. Our state-of-the-art facilities and
             dedicated faculty create the perfect atmosphere for focused studies,
             ensuring each student receives the support needed to thrive
             academically and excel in their pursuit of knowledge.
-          </h2>
+          </Typography>
         </div>
         <div className="home_prog_root">
           <Grid container spacing={4}>
