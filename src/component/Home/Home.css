@@ -35,23 +35,6 @@
     color: var(--dark-color);
 }
 
-/* Styles for screens between 600px and 900px wide, and in landscape orientation */
-@media screen and (max-width: 1100px) {
-
-    /* Your styles here */
-    .parent-container {
-        height: 30vh;
-    }
-
-    .home_prog_btn {
-        width: 30vh;
-        height: fit-content;
-        font-size: 50px;
-    }
-    .child-container {
-        font-size: xx-large;
-    }
-}
 
 
 .parent-container:hover {
@@ -197,4 +180,23 @@
     background-image: linear-gradient(to bottom right, var(--x-light-color), var(--x-dark-color));
     width: fit-content;
     height: fit-content;
+}
+
+
+/* Styles for screens between 600px and 900px wide, and in landscape orientation */
+@media screen and (max-width: 1100px) {
+
+    /* Your styles here */
+    .parent-container {
+        height: 30vh;
+    }
+
+    .home_prog_btn {
+        width: 30vh;
+        height: fit-content;
+        font-size: 50px;
+    }
+    .child-container {
+        font-size: xx-large;
+    }
 }
