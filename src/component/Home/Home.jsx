@@ -58,6 +58,7 @@ const Home = () => {
           infiniteLoop={true}
           interval={3000}
           showThumbs={false}
+          emulateTouch
         >
           <div className="carimg">
             <img src={car1} alt="car1" />
