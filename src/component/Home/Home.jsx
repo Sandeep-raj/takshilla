@@ -81,8 +81,8 @@ const Home = () => {
       {/* Programs */}
       <div style={{ width: "100%", position: "relative", paddingTop: "20px" }}>
         <div style={{ width: "90%", margin: "auto" }}>
-          <Typography variant="h4">Our Courses</Typography>
-          <Typography variant="h5">
+          <Typography variant="h1">Our Courses</Typography>
+          <Typography variant="h2">
             Experience a nurturing learning environment at Takshilla Classes,
             where excellence meets comfort. Our state-of-the-art facilities and
             dedicated faculty create the perfect atmosphere for focused studies,
