@@ -105,6 +105,7 @@ const Home = () => {
             academically and excel in their pursuit of knowledge.
           </Typography>
         </div>
+
         <div className="home_prog_root">
           <Grid container spacing={4}>
             <Grid item xs={12} sm={12} md={12} lg={4}>

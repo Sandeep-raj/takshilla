@@ -35,10 +35,20 @@
     color: var(--dark-color);
 }
 
+/* Styles for screens between 600px and 900px wide, and in landscape orientation */
+@media screen and (max-width: 1100px) {
+
+    /* Your styles here */
+    .parent-container {
+        height: 30vh;
+    }
+}
+
+
 .parent-container:hover {
     color: var(--x-dark-color);
     font-size: xx-large;
-    transition-delay:1s;
+    transition-delay: 1s;
     transition: .5s all;
 }
 
@@ -100,7 +110,7 @@
     min-height: 60vh;
     background-image: none;
     background-color: var(--x-dark-color);
-    transition-delay:1s;
+    transition-delay: 1s;
     transition: .5s all;
     opacity: 0.7;
     color: white;
@@ -117,15 +127,15 @@
 }
 
 .home_proc_listitem_btn {
-    margin-left: 10px !important; 
+    margin-left: 10px !important;
 }
 
-.home_proc_listitem:hover .home_proc_listitem_img  {
+.home_proc_listitem:hover .home_proc_listitem_img {
     color: var(--x-dark-color);
     font-weight: bolder;
 }
 
-.home_proc_listitem:hover .home_proc_listitem_btn  {
+.home_proc_listitem:hover .home_proc_listitem_btn {
     color: var(--x-dark-color) !important;
     font-weight: bolder !important;
 }
@@ -156,7 +166,7 @@
 }
 
 .home_faculty_img:hover {
-    transition-delay:1s;
+    transition-delay: 1s;
     transition: .5s all;
     opacity: 0.3;
 }
@@ -165,7 +175,7 @@
     display: none;
 }
 
-.home_faculty_img:hover + .home_faculty_name {
+.home_faculty_img:hover+.home_faculty_name {
     position: absolute;
     bottom: 5px;
     font-size: xx-large;
