@@ -93,7 +93,7 @@ const Home = () => {
           <Typography variant={desktopView ? "h4" : "h1"}>
             Our Courses
           </Typography>
-          <Typography variant={desktopView ? "h5" : "h1"}>
+          <Typography variant={desktopView ? "h5" : "h3"}>
             Experience a nurturing learning environment at Takshilla Classes,
             where excellence meets comfort. Our state-of-the-art facilities and
             dedicated faculty create the perfect atmosphere for focused studies,
