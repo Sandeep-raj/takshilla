@@ -202,4 +202,8 @@
     .child-container {
         font-size: xx-large;
     }
+
+    .home_faculty_img {
+        min-height: 30vh;
+    }
 }

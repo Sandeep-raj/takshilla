@@ -170,7 +170,9 @@ const Home = () => {
       {/* Our Faculty */}
       <div style={{ width: "100%", position: "relative", paddingTop: "20px" }}>
         <div className="home_faculty_root">
-          <h1>Meet Our Faculty</h1>
+          <Typography variant={desktopView ? "h4" : "h1"}>
+            Meet Our Faculty
+          </Typography>
           <Grid container spacing={5}>
             <Grid item xs={12} sm={12} md={12} lg={4}>
               <div
