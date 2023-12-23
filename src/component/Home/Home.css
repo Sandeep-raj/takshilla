@@ -194,7 +194,7 @@
     .home_prog_btn {
         width: 30vh;
         height: fit-content;
-        font-size: 20px;
+        font-size: 80px;
         left: calc(50vw + 20px);
     }
     .child-container {
