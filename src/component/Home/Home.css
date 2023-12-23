@@ -42,6 +42,10 @@
     .parent-container {
         height: 30vh;
     }
+
+    .home_prog_btn {
+        font-size: xx-large;
+    }
 }
 
 
