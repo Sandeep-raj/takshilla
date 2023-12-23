@@ -192,10 +192,12 @@
     }
 
     .home_prog_btn {
-        width: 30vh;
-        height: fit-content;
-        font-size: 70px;
-        left: calc(50vw + 25px);
+        position: relative;
+        width: 80%;
+        margin-top: 20px;
+        font-size: 30px;
+        left: 10%;
+        transform: rotate(0);
     }
     .child-container {
         font-size: xx-large;
