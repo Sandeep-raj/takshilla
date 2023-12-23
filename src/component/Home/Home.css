@@ -44,8 +44,9 @@
     }
 
     .home_prog_btn {
-        font-size: xx-large;
-        height: 30vh;
+        width: 30vh;
+        height: 10vh;
+        font-size: 10vh;
     }
     .child-container {
         font-size: xx-large;
