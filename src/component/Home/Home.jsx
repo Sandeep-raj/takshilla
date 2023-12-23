@@ -31,6 +31,7 @@ import {
   ListItemText,
   Paper,
   Typography,
+  useMediaQuery,
 } from "@mui/material";
 import { useState } from "react";
 import RegistrationForm from "../Register/RegisterForm";
@@ -38,6 +39,7 @@ import RegistrationForm from "../Register/RegisterForm";
 const Home = () => {
   const [modalopen, setModalOpen] = useState(false);
   const [hovertext, setHoverText] = useState("");
+  const desktopView = useMediaQuery("(min-width:1200px)");
 
   const handleModalOpen = () => {
     setModalOpen(true);
@@ -79,10 +81,19 @@ const Home = () => {
       </div>
 
       {/* Programs */}
-      <div style={{ width: "100%", position: "relative", paddingTop: "20px" }}>
+      <div
+        style={{
+          width: "100%",
+          position: "relative",
+          paddingTop: "20px",
+          paddingBottom: "20px",
+        }}
+      >
         <div style={{ width: "90%", margin: "auto" }}>
-          <Typography variant="h1">Our Courses</Typography>
-          <Typography variant="h2">
+          <Typography variant={desktopView ? "h4" : "h1"}>
+            Our Courses
+          </Typography>
+          <Typography variant={desktopView ? "h5" : "h1"}>
             Experience a nurturing learning environment at Takshilla Classes,
             where excellence meets comfort. Our state-of-the-art facilities and
             dedicated faculty create the perfect atmosphere for focused studies,
