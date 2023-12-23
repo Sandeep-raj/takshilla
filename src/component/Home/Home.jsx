@@ -93,7 +93,7 @@ const Home = () => {
         </div>
         <div className="home_prog_root">
           <Grid container spacing={4}>
-            <Grid item xs={12} sm={12} md={4} lg={4}>
+            <Grid item xs={12} sm={12} md={12} lg={4}>
               <Paper elevation={5} className="parent-container">
                 {/* Parent div with background image and 50% opacity */}
                 <div
@@ -108,7 +108,7 @@ const Home = () => {
                 </div>
               </Paper>
             </Grid>
-            <Grid item xs={12} sm={12} md={4} lg={4}>
+            <Grid item xs={12} sm={12} md={12} lg={4}>
               <Paper elevation={5} className="parent-container">
                 {/* Parent div with background image and 50% opacity */}
                 <div
@@ -123,7 +123,7 @@ const Home = () => {
                 </div>
               </Paper>
             </Grid>
-            <Grid item xs={12} sm={12} md={4} lg={4}>
+            <Grid item xs={12} sm={12} md={12} lg={4}>
               <Paper elevation={5} className="parent-container">
                 {/* Parent div with background image and 50% opacity */}
                 <div
@@ -157,21 +157,21 @@ const Home = () => {
         <div className="home_faculty_root">
           <h1>Meet Our Faculty</h1>
           <Grid container spacing={5}>
-            <Grid item xs={12} sm={12} md={4} lg={4}>
+            <Grid item xs={12} sm={12} md={12} lg={4}>
               <div
                 className="home_faculty_img"
                 style={{ backgroundImage: `url(${biru})` }}
               ></div>
               <div className="home_faculty_name">Biru Sir</div>
             </Grid>
-            <Grid item xs={12} sm={12} md={4} lg={4}>
+            <Grid item xs={12} sm={12} md={12} lg={4}>
               <div
                 className="home_faculty_img"
                 style={{ backgroundImage: `url(${rahul})` }}
               ></div>
               <div className="home_faculty_name">Rahul Sir</div>
             </Grid>
-            <Grid item xs={12} sm={12} md={4} lg={4}>
+            <Grid item xs={12} sm={12} md={12} lg={4}>
               <div
                 className="home_faculty_img"
                 style={{ backgroundImage: `url(${expert})` }}
@@ -204,7 +204,7 @@ const Home = () => {
               justify="center"
               style={{ minHeight: "100vh" }}
             >
-              <Grid item xs={12} sm={12} md={5} lg={5}>
+              <Grid item xs={12} sm={12} md={12} lg={5}>
                 <Paper>
                   <div
                     className="home_proc_img"
@@ -215,7 +215,7 @@ const Home = () => {
                   </div>
                 </Paper>
               </Grid>
-              <Grid item xs={12} sm={12} md={7} lg={7}>
+              <Grid item xs={12} sm={12} md={12} lg={7}>
                 <Paper style={{ width: "100%", height: "100%" }}>
                   <div className="home_proc_list">
                     <List>
