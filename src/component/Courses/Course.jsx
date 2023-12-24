@@ -38,7 +38,7 @@ const BalVidyalay = (props) => {
   };
 
   return (
-    <Card sx={{ minWidth: 500 }} className="course_card">
+    <Card sx={{ maxWidth: 300 }} className="course_card">
       <CardHeader
         title="Bal Vidyalay"
         subheader="Two-Year Foundation Program (TYFP) for Class 9th"
@@ -110,7 +110,7 @@ const YuvaVidyapeeth = (props) => {
   };
 
   return (
-    <Card sx={{ minWidth: 500 }} className="course_card">
+    <Card sx={{ maxWidth: 300 }} className="course_card">
       <CardHeader
         title="Yuva Vidyapeeth"
         subheader="Competitive Edge Program (CEP) for Class 10+"
@@ -177,7 +177,7 @@ const LakshyaKaksha = (props) => {
   };
 
   return (
-    <Card sx={{ minWidth: 500 }} className="course_card">
+    <Card sx={{ maxWidth: 300 }} className="course_card">
       <CardHeader
         title="Lakshya Kaksha"
         subheader="Advanced One-Year Program (AYP) for Class 11th"
