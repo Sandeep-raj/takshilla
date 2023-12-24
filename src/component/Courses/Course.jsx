@@ -38,7 +38,7 @@ const BalVidyalay = (props) => {
   };
 
   return (
-    <Card sx={{ maxWidth: 500 }} className="course_card">
+    <Card sx={{ minWidth: 500 }} className="course_card">
       <CardHeader
         title="Bal Vidyalay"
         subheader="Two-Year Foundation Program (TYFP) for Class 9th"
@@ -110,7 +110,7 @@ const YuvaVidyapeeth = (props) => {
   };
 
   return (
-    <Card sx={{ maxWidth: 500 }} className="course_card">
+    <Card sx={{ minWidth: 500 }} className="course_card">
       <CardHeader
         title="Yuva Vidyapeeth"
         subheader="Competitive Edge Program (CEP) for Class 10+"
@@ -177,7 +177,7 @@ const LakshyaKaksha = (props) => {
   };
 
   return (
-    <Card sx={{ maxWidth: 500 }} className="course_card">
+    <Card sx={{ minWidth: 500 }} className="course_card">
       <CardHeader
         title="Lakshya Kaksha"
         subheader="Advanced One-Year Program (AYP) for Class 11th"
@@ -240,7 +240,7 @@ const Course = () => {
       <div className="course_parallax">
         <Typography variant="h1">Our Courses</Typography>
       </div>
-      <Grid container alignItems={"center"}>
+      <Grid container>
         <Grid item xs={12} sm={12} md={12} lg={6}>
           <BalVidyalay />
         </Grid>
