@@ -173,13 +173,21 @@ const Home = () => {
           <Typography variant={desktopView ? "h4" : "h1"}>
             Meet Our Faculty
           </Typography>
-          <Grid container spacing={5}>
+          <Grid container spacing={5} alignItems={"center"}>
             <Grid item xs={12} sm={12} md={12} lg={4}>
               <div
-                className="home_faculty_img"
-                style={{ backgroundImage: `url(${biru})` }}
-              ></div>
-              <div className="home_faculty_name">Biru Sir</div>
+                style={{
+                  width: "100%",
+                  height: "100%",
+                  position: "relative",
+                }}
+              >
+                <div
+                  className="home_faculty_img"
+                  style={{ backgroundImage: `url(${biru})` }}
+                ></div>
+                <div className="home_faculty_name">Biru Sir</div>
+              </div>
             </Grid>
             <Grid item xs={12} sm={12} md={12} lg={4}>
               <div
@@ -212,7 +220,9 @@ const Home = () => {
       {/* Admission Process */}
       <div style={{ width: "100%", position: "relative", paddingTop: "20px" }}>
         <div style={{ width: "90%", margin: "auto" }}>
-          <h1>Admission Process at Takshilla Classes</h1>
+          <Typography variant={desktopView ? "h4" : "h1"}>
+            Admission Process at Takshilla Classes
+          </Typography>
           <div className="home_proc_root">
             <Grid
               container

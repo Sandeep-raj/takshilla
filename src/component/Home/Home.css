@@ -168,12 +168,12 @@
 }
 
 .home_faculty_img:hover+.home_faculty_name {
+    display: block;
     position: absolute;
-    bottom: 5px;
     font-size: xx-large;
     font-weight: bolder;
     color: var(--dark-color);
-    display: block;
+    top: 50%;
 }
 
 .register_modal {
@@ -205,5 +205,9 @@
 
     .home_faculty_img {
         min-height: 30vh;
+    }
+
+    .home_proc_list {
+        min-height: 80vh;
     }
 }
