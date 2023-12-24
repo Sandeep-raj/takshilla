@@ -299,6 +299,7 @@ const Home = () => {
                                     pathname: "course",
                                   });
                                 }}
+                                style={!desktopView ? { fontSize: "30px" } : {}}
                               >
                                 Explore Courses
                               </Button>
@@ -347,6 +348,7 @@ const Home = () => {
                                     pathname: "contact",
                                   });
                                 }}
+                                style={!desktopView ? { fontSize: "30px" } : {}}
                               >
                                 Contact
                               </Button>
@@ -391,7 +393,7 @@ const Home = () => {
                                 variant="outlined"
                                 className="home_proc_listitem_btn"
                                 onClick={handleModalOpen}
-                                size="large"
+                                style={!desktopView ? { fontSize: "30px" } : {}}
                               >
                                 Register
                               </Button>
@@ -447,6 +449,7 @@ const Home = () => {
                               <Button
                                 variant="outlined"
                                 className="home_proc_listitem_btn"
+                                style={!desktopView ? { fontSize: "30px" } : {}}
                                 disabled
                               >
                                 Check Results
