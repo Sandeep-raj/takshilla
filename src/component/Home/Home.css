@@ -210,4 +210,8 @@
     .home_proc_list {
         min-height: 80vh;
     }
+
+    .home_proc_list p,h1,h2,h3,h4,h5 {
+            font-size: 30px;
+    }
 }
