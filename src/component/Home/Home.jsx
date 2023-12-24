@@ -94,7 +94,7 @@ const Home = () => {
             Our Courses
           </Typography>
           <Typography
-            variant={desktopView ? "h5" : "h4"}
+            variant={desktopView ? "h5" : "h5"}
             marginTop={5}
             marginBottom={5}
           >
