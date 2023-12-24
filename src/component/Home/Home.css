@@ -212,5 +212,6 @@
     }
     .home_proc_listitem_btn {
         font-size: x-large;
+        text-align: justify;
     }
 }

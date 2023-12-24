@@ -328,12 +328,14 @@ const Home = () => {
                         <ListItemText
                           primary={
                             <>
-                              <Typography variant="h6">Connect</Typography>
+                              <Typography variant={desktopView ? "h6" : "h2"}>
+                                Connect
+                              </Typography>
                             </>
                           }
                           secondary={
                             <>
-                              <Typography variant="p">
+                              <Typography variant={desktopView ? "p" : "h3"}>
                                 Reach out for information on courses, faculty,
                                 and facilities via phone or email.
                               </Typography>
@@ -374,12 +376,14 @@ const Home = () => {
                         <ListItemText
                           primary={
                             <>
-                              <Typography variant="h5">Register</Typography>
+                              <Typography variant={desktopView ? "h6" : "h2"}>
+                                Register
+                              </Typography>
                             </>
                           }
                           secondary={
                             <>
-                              <Typography variant="p">
+                              <Typography variant={desktopView ? "p" : "h3"}>
                                 Complete a simple registration form, and our
                                 team will assist you through the process.
                               </Typography>
@@ -424,14 +428,14 @@ const Home = () => {
                         <ListItemText
                           primary={
                             <>
-                              <Typography variant="h5">
+                              <Typography variant={desktopView ? "h6" : "h2"}>
                                 Scholarship Exam
                               </Typography>
                             </>
                           }
                           secondary={
                             <>
-                              <Typography variant="p">
+                              <Typography variant={desktopView ? "p" : "h3"}>
                                 Register for our scholarship exam to showcase
                                 your potential and{" "}
                                 <span className="home_proc_listitem_span">
