@@ -21,19 +21,19 @@ const Footer = () => {
           <Typography variant={!desktopView ? "h3" : "h4"}>
             Contact Numbers:
           </Typography>
-          <Typography variant={!desktopView ? "h3" : "h7"}>
+          <Typography variant={!desktopView ? "h4" : "h7"}>
             General Enquiries: [Your Contact Number]
             <br />
           </Typography>
-          <Typography variant={!desktopView ? "h3" : "h7"}>
+          <Typography variant={!desktopView ? "h4" : "h7"}>
             Admission Helpline: [Admission Contact Number]
             <br />
           </Typography>
-          <Typography variant={!desktopView ? "h3" : "h7"}>
+          <Typography variant={!desktopView ? "h4" : "h7"}>
             Email: info@takshillaclasses.com
             <br />
           </Typography>
-          <Typography variant={!desktopView ? "h3" : "h7"}>
+          <Typography variant={!desktopView ? "h4" : "h7"}>
             Website: www.takshillaclasses.com
             <br />
           </Typography>
