@@ -170,7 +170,7 @@ const Home = () => {
       {/* Our Faculty */}
       <div style={{ width: "100%", position: "relative", paddingTop: "20px" }}>
         <div className="home_faculty_root">
-          <Typography variant={desktopView ? "h4" : "h1"}>
+          <Typography variant={desktopView ? "h4" : "h3"}>
             Meet Our Faculty
           </Typography>
           <Grid container spacing={5} alignItems={"center"}>
@@ -220,7 +220,7 @@ const Home = () => {
       {/* Admission Process */}
       <div style={{ width: "100%", position: "relative", paddingTop: "20px" }}>
         <div style={{ width: "90%", margin: "auto" }}>
-          <Typography variant={desktopView ? "h4" : "h1"}>
+          <Typography variant={desktopView ? "h4" : "h3"}>
             Admission Process at Takshilla Classes
           </Typography>
           <div className="home_proc_root">
@@ -252,29 +252,14 @@ const Home = () => {
                       >
                         <ListItemAvatar>
                           <Avatar
-                            style={
-                              desktopView
-                                ? {
-                                    width: "60px",
-                                    height: "60px",
-                                    margin: "5px",
-                                  }
-                                : {
-                                    margin: "5px",
-                                    width: "100px",
-                                    height: "100px",
-                                  }
-                            }
+                            style={{
+                              width: "60px",
+                              height: "60px",
+                              margin: "5px",
+                            }}
                           >
                             <ScreenSearchDesktopTwoToneIcon
-                              style={
-                                desktopView
-                                  ? { width: "45px", height: "45px" }
-                                  : {
-                                      width: "100%",
-                                      height: "100%",
-                                    }
-                              }
+                              style={{ width: "45px", height: "45px" }}
                               className="home_proc_listitem_img"
                             />
                           </Avatar>
@@ -282,14 +267,14 @@ const Home = () => {
                         <ListItemText
                           primary={
                             <>
-                              <Typography variant={desktopView ? "h6" : "h2"}>
+                              <Typography variant={desktopView ? "h6" : "h3"}>
                                 Explore
                               </Typography>
                             </>
                           }
                           secondary={
                             <>
-                              <Typography variant={desktopView ? "p" : "h3"}>
+                              <Typography variant="p">
                                 Explore our course page to find the perfect fit
                                 for your academic journey at Takshilla Classes.
                               </Typography>
@@ -301,7 +286,6 @@ const Home = () => {
                                     pathname: "course",
                                   });
                                 }}
-                                style={!desktopView ? { fontSize: "50px" } : {}}
                               >
                                 Explore Courses
                               </Button>
@@ -316,29 +300,14 @@ const Home = () => {
                       >
                         <ListItemAvatar>
                           <Avatar
-                            style={
-                              desktopView
-                                ? {
-                                    width: "60px",
-                                    height: "60px",
-                                    margin: "5px",
-                                  }
-                                : {
-                                    margin: "5px",
-                                    width: "100px",
-                                    height: "100px",
-                                  }
-                            }
+                            style={{
+                              width: "60px",
+                              height: "60px",
+                              margin: "5px",
+                            }}
                           >
                             <SupportAgentTwoToneIcon
-                              style={
-                                desktopView
-                                  ? { width: "45px", height: "45px" }
-                                  : {
-                                      width: "100%",
-                                      height: "100%",
-                                    }
-                              }
+                              style={{ width: "45px", height: "45px" }}
                               className="home_proc_listitem_img"
                             />
                           </Avatar>
@@ -346,14 +315,14 @@ const Home = () => {
                         <ListItemText
                           primary={
                             <>
-                              <Typography variant={desktopView ? "h6" : "h2"}>
+                              <Typography variant={desktopView ? "h6" : "h3"}>
                                 Connect
                               </Typography>
                             </>
                           }
                           secondary={
                             <>
-                              <Typography variant={desktopView ? "p" : "h3"}>
+                              <Typography variant={"p"}>
                                 Reach out for information on courses, faculty,
                                 and facilities via phone or email.
                               </Typography>
@@ -365,7 +334,6 @@ const Home = () => {
                                     pathname: "contact",
                                   });
                                 }}
-                                style={!desktopView ? { fontSize: "50px" } : {}}
                               >
                                 Contact
                               </Button>
@@ -380,29 +348,14 @@ const Home = () => {
                       >
                         <ListItemAvatar>
                           <Avatar
-                            style={
-                              desktopView
-                                ? {
-                                    width: "60px",
-                                    height: "60px",
-                                    margin: "5px",
-                                  }
-                                : {
-                                    margin: "5px",
-                                    width: "100px",
-                                    height: "100px",
-                                  }
-                            }
+                            style={{
+                              width: "60px",
+                              height: "60px",
+                              margin: "5px",
+                            }}
                           >
                             <DocumentScannerTwoToneIcon
-                              style={
-                                desktopView
-                                  ? { width: "45px", height: "45px" }
-                                  : {
-                                      width: "100%",
-                                      height: "100%",
-                                    }
-                              }
+                              style={{ width: "45px", height: "45px" }}
                               className="home_proc_listitem_img"
                             />
                           </Avatar>
@@ -410,14 +363,14 @@ const Home = () => {
                         <ListItemText
                           primary={
                             <>
-                              <Typography variant={desktopView ? "h6" : "h2"}>
+                              <Typography variant={desktopView ? "h6" : "h3"}>
                                 Register
                               </Typography>
                             </>
                           }
                           secondary={
                             <>
-                              <Typography variant={desktopView ? "p" : "h3"}>
+                              <Typography variant={"p"}>
                                 Complete a simple registration form, and our
                                 team will assist you through the process.
                               </Typography>
@@ -425,7 +378,6 @@ const Home = () => {
                                 variant="outlined"
                                 className="home_proc_listitem_btn"
                                 onClick={handleModalOpen}
-                                style={!desktopView ? { fontSize: "50px" } : {}}
                               >
                                 Register
                               </Button>
@@ -448,29 +400,14 @@ const Home = () => {
                       >
                         <ListItemAvatar>
                           <Avatar
-                            style={
-                              desktopView
-                                ? {
-                                    width: "60px",
-                                    height: "60px",
-                                    margin: "5px",
-                                  }
-                                : {
-                                    margin: "5px",
-                                    width: "100px",
-                                    height: "100px",
-                                  }
-                            }
+                            style={{
+                              width: "60px",
+                              height: "60px",
+                              margin: "5px",
+                            }}
                           >
                             <PsychologyTwoToneIcon
-                              style={
-                                desktopView
-                                  ? { width: "45px", height: "45px" }
-                                  : {
-                                      width: "100%",
-                                      height: "100%",
-                                    }
-                              }
+                              style={{ width: "45px", height: "45px" }}
                               className="home_proc_listitem_img"
                             />
                           </Avatar>
@@ -478,14 +415,14 @@ const Home = () => {
                         <ListItemText
                           primary={
                             <>
-                              <Typography variant={desktopView ? "h6" : "h2"}>
+                              <Typography variant={desktopView ? "h6" : "h3"}>
                                 Scholarship Exam
                               </Typography>
                             </>
                           }
                           secondary={
                             <>
-                              <Typography variant={desktopView ? "p" : "h3"}>
+                              <Typography variant={"p"}>
                                 Register for our scholarship exam to showcase
                                 your potential and{" "}
                                 <span className="home_proc_listitem_span">
@@ -496,7 +433,6 @@ const Home = () => {
                               <Button
                                 variant="outlined"
                                 className="home_proc_listitem_btn"
-                                style={!desktopView ? { fontSize: "50px" } : {}}
                                 disabled
                               >
                                 Check Results
