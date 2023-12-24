@@ -240,7 +240,7 @@ const Course = () => {
       <div className="course_parallax">
         <Typography variant="h1">Our Courses</Typography>
       </div>
-      <Grid container>
+      <Grid container alignItems={"center"}>
         <Grid item xs={12} sm={12} md={12} lg={6}>
           <BalVidyalay />
         </Grid>
