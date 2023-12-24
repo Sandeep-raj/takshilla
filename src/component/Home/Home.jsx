@@ -90,11 +90,11 @@ const Home = () => {
         }}
       >
         <div style={{ width: "90%", margin: "auto" }}>
-          <Typography variant={desktopView ? "h4" : "h4"}>
+          <Typography variant={desktopView ? "h4" : "h3"}>
             Our Courses
           </Typography>
           <Typography
-            variant={desktopView ? "h5" : "h3"}
+            variant={desktopView ? "h5" : "h4"}
             marginTop={5}
             marginBottom={5}
           >
