@@ -267,7 +267,7 @@ const Home = () => {
                         <ListItemText
                           primary={
                             <>
-                              <Typography variant={desktopView ? "h6" : "h3"}>
+                              <Typography variant={desktopView ? "h6" : "h4"}>
                                 Explore
                               </Typography>
                             </>
@@ -315,7 +315,7 @@ const Home = () => {
                         <ListItemText
                           primary={
                             <>
-                              <Typography variant={desktopView ? "h6" : "h3"}>
+                              <Typography variant={desktopView ? "h6" : "h4"}>
                                 Connect
                               </Typography>
                             </>
@@ -363,7 +363,7 @@ const Home = () => {
                         <ListItemText
                           primary={
                             <>
-                              <Typography variant={desktopView ? "h6" : "h3"}>
+                              <Typography variant={desktopView ? "h6" : "h4"}>
                                 Register
                               </Typography>
                             </>
@@ -415,7 +415,7 @@ const Home = () => {
                         <ListItemText
                           primary={
                             <>
-                              <Typography variant={desktopView ? "h6" : "h3"}>
+                              <Typography variant={desktopView ? "h6" : "h4"}>
                                 Scholarship Exam
                               </Typography>
                             </>
