@@ -261,6 +261,8 @@ const Home = () => {
                                   }
                                 : {
                                     margin: "5px",
+                                    width: "100px",
+                                    height: "100px",
                                   }
                             }
                           >
@@ -314,14 +316,29 @@ const Home = () => {
                       >
                         <ListItemAvatar>
                           <Avatar
-                            style={{
-                              width: "60px",
-                              height: "60px",
-                              margin: "5px",
-                            }}
+                            style={
+                              desktopView
+                                ? {
+                                    width: "60px",
+                                    height: "60px",
+                                    margin: "5px",
+                                  }
+                                : {
+                                    margin: "5px",
+                                    width: "100px",
+                                    height: "100px",
+                                  }
+                            }
                           >
                             <SupportAgentTwoToneIcon
-                              style={{ width: "45px", height: "45px" }}
+                              style={
+                                desktopView
+                                  ? { width: "45px", height: "45px" }
+                                  : {
+                                      width: "100%",
+                                      height: "100%",
+                                    }
+                              }
                               className="home_proc_listitem_img"
                             />
                           </Avatar>
@@ -363,14 +380,29 @@ const Home = () => {
                       >
                         <ListItemAvatar>
                           <Avatar
-                            style={{
-                              width: "60px",
-                              height: "60px",
-                              margin: "5px",
-                            }}
+                            style={
+                              desktopView
+                                ? {
+                                    width: "60px",
+                                    height: "60px",
+                                    margin: "5px",
+                                  }
+                                : {
+                                    margin: "5px",
+                                    width: "100px",
+                                    height: "100px",
+                                  }
+                            }
                           >
                             <DocumentScannerTwoToneIcon
-                              style={{ width: "45px", height: "45px" }}
+                              style={
+                                desktopView
+                                  ? { width: "45px", height: "45px" }
+                                  : {
+                                      width: "100%",
+                                      height: "100%",
+                                    }
+                              }
                               className="home_proc_listitem_img"
                             />
                           </Avatar>
@@ -416,14 +448,29 @@ const Home = () => {
                       >
                         <ListItemAvatar>
                           <Avatar
-                            style={{
-                              width: "60px",
-                              height: "60px",
-                              margin: "5px",
-                            }}
+                            style={
+                              desktopView
+                                ? {
+                                    width: "60px",
+                                    height: "60px",
+                                    margin: "5px",
+                                  }
+                                : {
+                                    margin: "5px",
+                                    width: "100px",
+                                    height: "100px",
+                                  }
+                            }
                           >
                             <PsychologyTwoToneIcon
-                              style={{ width: "45px", height: "45px" }}
+                              style={
+                                desktopView
+                                  ? { width: "45px", height: "45px" }
+                                  : {
+                                      width: "100%",
+                                      height: "100%",
+                                    }
+                              }
                               className="home_proc_listitem_img"
                             />
                           </Avatar>
