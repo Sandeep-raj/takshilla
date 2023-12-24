@@ -1,4 +1,4 @@
-import { Grid } from "@mui/material";
+import { Grid, Typography, useMediaQuery } from "@mui/material";
 import "./Footer.css";
 import facebook from "../../assets/images/facebook.svg";
 import instagram from "../../assets/images/instagram.svg";
@@ -6,16 +6,21 @@ import twiter from "../../assets/images/square-x-twitter.svg";
 import youtube from "../../assets/images/youtube.svg";
 
 const Footer = () => {
+  const desktopView = useMediaQuery("(min-width:1200px)");
   return (
     <div className="footer_root">
       <Grid container spacing={2} className="rootgrid">
         <Grid item xs={12} sm={12} md={12} lg={6}>
-          <h3>Contact Information Address:</h3>
-          <p>
+          <Typography variant={!desktopView ? "h3" : "h2"}>
+            Contact Information Address:
+          </Typography>
+          <Typography variant={!desktopView ? "p" : "p"}>
             Takshilla Classes, Opp.-Govt. Girls High school, Ashok Rajpath Rd,
             Patna, Bihar 800001
-          </p>
-          <h3>Contact Numbers:</h3>
+          </Typography>
+          <Typography variant={!desktopView ? "h3" : "h2"}>
+            Contact Numbers:
+          </Typography>
           <p>General Enquiries: [Your Contact Number]</p>
           <p>Admission Helpline: [Admission Contact Number]</p>
           <p>Email: info@takshillaclasses.com</p>
