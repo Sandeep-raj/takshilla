@@ -11,20 +11,32 @@ const Footer = () => {
     <div className="footer_root">
       <Grid container spacing={2} className="rootgrid">
         <Grid item xs={12} sm={12} md={12} lg={6}>
-          <Typography variant={!desktopView ? "h3" : "h2"}>
+          <Typography variant={!desktopView ? "h3" : "h4"}>
             Contact Information Address:
           </Typography>
-          <Typography variant={!desktopView ? "p" : "p"}>
+          <Typography variant={!desktopView ? "h4" : "h7"}>
             Takshilla Classes, Opp.-Govt. Girls High school, Ashok Rajpath Rd,
             Patna, Bihar 800001
           </Typography>
-          <Typography variant={!desktopView ? "h3" : "h2"}>
+          <Typography variant={!desktopView ? "h3" : "h4"}>
             Contact Numbers:
           </Typography>
-          <p>General Enquiries: [Your Contact Number]</p>
-          <p>Admission Helpline: [Admission Contact Number]</p>
-          <p>Email: info@takshillaclasses.com</p>
-          <p>Website: www.takshillaclasses.com</p>
+          <Typography variant={!desktopView ? "h3" : "h7"}>
+            General Enquiries: [Your Contact Number]
+            <br />
+          </Typography>
+          <Typography variant={!desktopView ? "h3" : "h7"}>
+            Admission Helpline: [Admission Contact Number]
+            <br />
+          </Typography>
+          <Typography variant={!desktopView ? "h3" : "h7"}>
+            Email: info@takshillaclasses.com
+            <br />
+          </Typography>
+          <Typography variant={!desktopView ? "h3" : "h7"}>
+            Website: www.takshillaclasses.com
+            <br />
+          </Typography>
         </Grid>
         <Grid item xs={12} sm={12} md={12} lg={6}>
           <h3>Follow Us</h3>
