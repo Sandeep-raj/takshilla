@@ -9,7 +9,7 @@ const Footer = () => {
   return (
     <div className="footer_root">
       <Grid container spacing={2} className="rootgrid">
-        <Grid item xs={12} sm={12} md={6} lg={6}>
+        <Grid item xs={12} sm={12} md={12} lg={6}>
           <h3>Contact Information Address:</h3>
           <p>
             Takshilla Classes, Opp.-Govt. Girls High school, Ashok Rajpath Rd,
@@ -21,7 +21,7 @@ const Footer = () => {
           <p>Email: info@takshillaclasses.com</p>
           <p>Website: www.takshillaclasses.com</p>
         </Grid>
-        <Grid item xs={12} sm={12} md={6} lg={6}>
+        <Grid item xs={12} sm={12} md={12} lg={6}>
           <h3>Follow Us</h3>
           <p>Connect with us on social media for updates and announcements:</p>
           <div className="social_links">
