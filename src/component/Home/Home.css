@@ -211,7 +211,7 @@
         min-height: 80vh;
     }
     .home_proc_listitem_btn {
-        font-size: x-large;
-        text-align: justify;
+        width: 100%;
+        height: 100%;
     }
 }

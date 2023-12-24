@@ -391,6 +391,7 @@ const Home = () => {
                                 variant="outlined"
                                 className="home_proc_listitem_btn"
                                 onClick={handleModalOpen}
+                                size="large"
                               >
                                 Register
                               </Button>
