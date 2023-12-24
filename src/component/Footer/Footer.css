@@ -15,12 +15,14 @@
 
 .copyright {
     text-align: center;
+    font-size: larger;
 }
 
 .social_links {
     display: flex;
     position: relative;
     width: 80%;
+    margin-top: 15px;
 }
 
 .social_span {
@@ -42,4 +44,28 @@
 .social_span h3 {
     margin-top: 5px;
     font-size: small;
+}
+
+/* Styles for screens between 600px and 900px wide, and in landscape orientation */
+@media screen and (max-width: 1100px) {
+    .social_span {
+        flex-direction: row;
+        flex-grow: 1;
+        text-align: center;
+    }
+
+    .social_span img {
+        width: 80px;
+        height: 80px;
+    }
+
+    .social_span img:hover {
+        width: 85px;
+        height: 85px;
+    }
+
+    .social_span h3 {
+        margin-top: 5px;
+        font-size: large;
+    }
 }

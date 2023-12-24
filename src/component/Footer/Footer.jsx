@@ -39,8 +39,12 @@ const Footer = () => {
           </Typography>
         </Grid>
         <Grid item xs={12} sm={12} md={12} lg={6}>
-          <h3>Follow Us</h3>
-          <p>Connect with us on social media for updates and announcements:</p>
+          <Typography variant={!desktopView ? "h3" : "h4"}>
+            Follow Us
+          </Typography>
+          <Typography variant={!desktopView ? "h4" : "h7"}>
+            Connect with us on social media for updates and announcements:
+          </Typography>
           <div className="social_links">
             <span className="social_span">
               <img src={facebook} alt="facebook" />
