@@ -252,14 +252,27 @@ const Home = () => {
                       >
                         <ListItemAvatar>
                           <Avatar
-                            style={{
-                              width: "60px",
-                              height: "60px",
-                              margin: "5px",
-                            }}
+                            style={
+                              desktopView
+                                ? {
+                                    width: "60px",
+                                    height: "60px",
+                                    margin: "5px",
+                                  }
+                                : {
+                                    margin: "5px",
+                                  }
+                            }
                           >
                             <ScreenSearchDesktopTwoToneIcon
-                              style={{ width: "45px", height: "45px" }}
+                              style={
+                                desktopView
+                                  ? { width: "45px", height: "45px" }
+                                  : {
+                                      width: "100%",
+                                      height: "100%",
+                                    }
+                              }
                               className="home_proc_listitem_img"
                             />
                           </Avatar>
@@ -267,12 +280,14 @@ const Home = () => {
                         <ListItemText
                           primary={
                             <>
-                              <Typography variant="h6">Explore</Typography>
+                              <Typography variant={desktopView ? "h6" : "h2"}>
+                                Explore
+                              </Typography>
                             </>
                           }
                           secondary={
                             <>
-                              <Typography variant="p">
+                              <Typography variant={desktopView ? "p" : "h3"}>
                                 Explore our course page to find the perfect fit
                                 for your academic journey at Takshilla Classes.
                               </Typography>
