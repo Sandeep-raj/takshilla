@@ -4,6 +4,7 @@
     height: 10vh;
     min-height: 40px;
     padding: 5px 0px 5px 10px;
+    filter: brightness(0) invert(1) sepia(0) saturate(10000%) hue-rotate(0deg);
 }
 
 .headerNav {
@@ -19,16 +20,6 @@
     z-index: 1100;
     position: sticky;
     top: 0;
-}
-
-.navmenu {
-    margin: auto;
-    position: relative;
-    right: 10px;
-}
-
-.navmenu img {
-    height: 7vh;
 }
 
 .navbtn {
@@ -52,47 +43,3 @@
     color: var(--x-dark-color);
     font-weight: 700;
 }
-
-.menubtn {
-    width: 150px;
-    height: 40px;
-    color: var(--x-light-color);
-    background-color: var(--dark-color);
-    border: 2px solid var(--x-light-color);
-    font-size: large;
-}
-
-.menubtn:hover {
-    width: 150px;
-    height: 40px;
-    color: var(--x-light-color);
-    background-color: var(--x-dark-color);
-    border: 2px solid var(--x-light-color);
-    font-size: large;
-}
-
-.menulist {
-    display: flex;
-    flex-direction: column;
-    position: absolute;
-    right: 1vh;
-    z-index: 110;
-}
-
-@media (max-width: 999px) {
-   .navbtn {
-    display: none;
-   }
-   .navmenu {
-    display: block;
-   }
-}
-
-@media (min-width: 1000px) {
-    .navbtn {
-     display: block;
-    }
-    .navmenu {
-     display: none;
-    }
- }

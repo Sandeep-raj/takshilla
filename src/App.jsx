@@ -14,62 +14,64 @@ function App() {
   return (
     <div className="root">
       <Header />
-      <Routes>
-        <Route
-          path="/"
-          element={
-            <>
-              <ScrollToTop />
-              <Home />
-            </>
-          }
-        />
-        <Route
-          path="about"
-          element={
-            <>
-              <ScrollToTop />
-              <About />
-            </>
-          }
-        />
-        <Route
-          path="contact"
-          element={
-            <>
-              <ScrollToTop />
-              <Contact />
-            </>
-          }
-        />
-        <Route
-          path="course"
-          element={
-            <>
-              <ScrollToTop />
-              <Course />
-            </>
-          }
-        />
-        <Route
-          path="faculty"
-          element={
-            <>
-              <ScrollToTop />
-              <Faculty />
-            </>
-          }
-        />
-        <Route
-          path="register"
-          element={
-            <>
-              <ScrollToTop />
-              <Register />
-            </>
-          }
-        />
-      </Routes>
+      <div style={{ marginTop: "calc(10vh + 10px)" }}>
+        <Routes>
+          <Route
+            path="/"
+            element={
+              <>
+                <ScrollToTop />
+                <Home />
+              </>
+            }
+          />
+          <Route
+            path="about"
+            element={
+              <>
+                <ScrollToTop />
+                <About />
+              </>
+            }
+          />
+          <Route
+            path="contact"
+            element={
+              <>
+                <ScrollToTop />
+                <Contact />
+              </>
+            }
+          />
+          <Route
+            path="course"
+            element={
+              <>
+                <ScrollToTop />
+                <Course />
+              </>
+            }
+          />
+          <Route
+            path="faculty"
+            element={
+              <>
+                <ScrollToTop />
+                <Faculty />
+              </>
+            }
+          />
+          <Route
+            path="register"
+            element={
+              <>
+                <ScrollToTop />
+                <Register />
+              </>
+            }
+          />
+        </Routes>
+      </div>
       <Footer />
     </div>
   );

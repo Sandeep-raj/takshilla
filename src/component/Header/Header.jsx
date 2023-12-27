@@ -1,109 +1,181 @@
-import taxlogo from "../../assets/images/taxlogo.png";
-import menu from "../../assets/images/menu.png";
-import cross from "../../assets/images/cross.png";
+import {
+  AppBar,
+  Box,
+  Container,
+  IconButton,
+  Menu,
+  MenuItem,
+  Toolbar,
+  Typography,
+} from "@mui/material";
+import MenuIcon from "@mui/icons-material/Menu";
+import AdbIcon from "@mui/icons-material/Adb";
+
 import "./Header.css";
+import TaxLogo from "../../assets/images/taxlogo.png";
 import { useState } from "react";
 import { useNavigate } from "react-router-dom";
 
 const Header = () => {
-  const [menuOpen, setMenuOpen] = useState(false);
+  const [anchorElNav, setAnchorElNav] = useState(null);
   const navigate = useNavigate();
 
-  const toggleMenu = () => {
-    setMenuOpen(!menuOpen);
+  const handleOpenNavMenu = (event) => {
+    setAnchorElNav(event.currentTarget);
+  };
+  const handleCloseNavMenu = () => {
+    setAnchorElNav(null);
   };
 
-  let navbtn = <img alt="menubtn" src={menu} onClick={toggleMenu} />;
-  if (menuOpen) {
-    navbtn = <img alt="menubtn" src={cross} onClick={toggleMenu} />;
-  } else {
-    navbtn = <img alt="menubtn" src={menu} onClick={toggleMenu} />;
-  }
+  const handleClickRoute = (pathname) => {
+    navigate({
+      pathname: pathname,
+    });
+  };
 
   return (
-    <>
-      <div className="headerNav">
-        <img
-          src={taxlogo}
-          className="taxLogo"
-          onClick={() => {
-            navigate({
-              pathname: "/",
-            });
-          }}
-        />
-        <div style={{ flexGrow: 1 }} />
-        <button
-          onClick={() => {
-            navigate({ pathname: "/about" });
-          }}
-          className="navbtn"
-        >
-          About
-        </button>
-        <button
-          onClick={() => {
-            navigate({ pathname: "/register" });
-          }}
-          className="navbtn"
-        >
-          Register
-        </button>
-        <button
-          onClick={() => {
-            navigate({ pathname: "/faculty" });
-          }}
-          className="navbtn"
-        >
-          Faculty
-        </button>
-        <button
-          onClick={() => {
-            navigate({ pathname: "/contact" });
-          }}
-          className="navbtn"
-        >
-          Contact
-        </button>
-        <span className="navmenu">{navbtn}</span>
-      </div>
-      {menuOpen && (
-        <div className="menulist">
-          <button
-            onClick={() => {
-              navigate({ pathname: "/about" });
-            }}
-            className="menubtn"
+    <AppBar component={"nav"} className="headerNav" elevation={7}>
+      <Container maxWidth="xl">
+        <Toolbar disableGutters style={{ width: "100%" }}>
+          <Box
+            sx={{ display: { xs: "none", md: "flex" }, mr: 1 }}
+            style={{ width: "100%" }}
           >
-            About
-          </button>
-          <button
-            onClick={() => {
-              navigate({ pathname: "/register" });
-            }}
-            className="menubtn"
-          >
-            Register
-          </button>
-          <button
-            onClick={() => {
-              navigate({ pathname: "/faculty" });
-            }}
-            className="menubtn"
-          >
-            Faculty
-          </button>
-          <button
-            onClick={() => {
-              navigate({ pathname: "/contact" });
-            }}
-            className="menubtn"
-          >
-            Contact
-          </button>
-        </div>
-      )}
-    </>
+            <img
+              src={TaxLogo}
+              alt="taxlogo"
+              className="taxLogo"
+              onClick={() => {
+                handleClickRoute("/");
+              }}
+            />
+
+            <div style={{ flexGrow: 1 }} />
+
+            <button
+              className="navbtn"
+              onClick={() => {
+                handleClickRoute("/about");
+              }}
+            >
+              About
+            </button>
+            <button
+              className="navbtn"
+              onClick={() => {
+                handleClickRoute("/faculty");
+              }}
+            >
+              Faculty
+            </button>
+            <button
+              className="navbtn"
+              onClick={() => {
+                handleClickRoute("/register");
+              }}
+            >
+              Register
+            </button>
+            <button
+              className="navbtn"
+              onClick={() => {
+                handleClickRoute("/contact");
+              }}
+            >
+              Contact
+            </button>
+          </Box>
+
+          <Box sx={{ flexGrow: 1, display: { xs: "flex", md: "none" } }}>
+            <IconButton
+              size="large"
+              aria-label="account of current user"
+              aria-controls="menu-appbar"
+              aria-haspopup="true"
+              onClick={handleOpenNavMenu}
+              color="inherit"
+            >
+              <MenuIcon style={{ fontSize: "8vh" }} />
+            </IconButton>
+
+            <Menu
+              id="menu-appbar"
+              anchorEl={anchorElNav}
+              anchorOrigin={{
+                vertical: "bottom",
+                horizontal: "left",
+              }}
+              keepMounted
+              transformOrigin={{
+                vertical: "top",
+                horizontal: "left",
+              }}
+              open={Boolean(anchorElNav)}
+              onClose={handleCloseNavMenu}
+              sx={{
+                display: { xs: "block", md: "none" },
+              }}
+            >
+              <MenuItem
+                key="About"
+                onClick={() => {
+                  handleCloseNavMenu();
+                  handleClickRoute("/about");
+                }}
+                className="menubtn"
+              >
+                <Typography textAlign="center">About</Typography>
+              </MenuItem>
+              <MenuItem
+                key="Faculty"
+                onClick={() => {
+                  handleCloseNavMenu();
+                  handleClickRoute("/faculty");
+                }}
+                className="menubtn"
+              >
+                <Typography textAlign="center">Faculty</Typography>
+              </MenuItem>
+              <MenuItem
+                key="About"
+                onClick={() => {
+                  handleCloseNavMenu();
+                  handleClickRoute("/register");
+                }}
+                className="menubtn"
+              >
+                <Typography textAlign="center">Register</Typography>
+              </MenuItem>
+              <MenuItem
+                key="About"
+                onClick={() => {
+                  handleCloseNavMenu();
+                  handleClickRoute("/contact");
+                }}
+                className="menubtn"
+              >
+                <Typography textAlign="center">Contact</Typography>
+              </MenuItem>
+            </Menu>
+
+            <img
+              src={TaxLogo}
+              alt="taxlogo"
+              style={{
+                width: "50vw",
+                height: "7vh",
+                margin: "auto",
+                filter:
+                  "brightness(0) invert(1) sepia(0) saturate(10000%) hue-rotate(0deg)",
+              }}
+              onClick={() => {
+                handleClickRoute("/");
+              }}
+            />
+          </Box>
+        </Toolbar>
+      </Container>
+    </AppBar>
   );
 };
 
