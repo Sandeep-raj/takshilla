@@ -11,30 +11,30 @@ const Footer = () => {
     <div className="footer_root">
       <Grid container spacing={2} className="rootgrid">
         <Grid item xs={12} sm={12} md={12} lg={6}>
-          <Typography variant={!desktopView ? "h6" : "h4"}>
+          <Typography variant={!desktopView ? "h4" : "h5"}>
             Contact Information Address:
           </Typography>
-          <Typography variant={!desktopView ? "p" : "h7"}>
-            Takshilla Classes, Opp.-Govt. Girls High school, Ashok Rajpath Rd,
-            Patna, Bihar 800001
+          <Typography variant={!desktopView ? "p" : "p"}>
+            Takshilla Classes, Abdullah Chak, Near Satyam School, Post - Bairya,
+            P.S - Gopalpur, Patna 800007
           </Typography>
-          <Typography variant={!desktopView ? "h6" : "h4"}>
+          <Typography variant={!desktopView ? "h4" : "h5"}>
             Contact Numbers:
           </Typography>
           <Typography variant={!desktopView ? "p" : "h7"}>
-            General Enquiries: [Your Contact Number]
+            General Enquiries: +91-9905910453
             <br />
           </Typography>
           <Typography variant={!desktopView ? "p" : "h7"}>
-            Admission Helpline: [Admission Contact Number]
+            Admission Helpline: +91-9905910453
             <br />
           </Typography>
           <Typography variant={!desktopView ? "p" : "h7"}>
-            Email: info@takshillaclasses.com
+            Email: takshilla.info@gmail.com
             <br />
           </Typography>
           <Typography variant={!desktopView ? "p" : "h7"}>
-            Website: www.takshillaclasses.com
+            Website: www.takshilla.in
             <br />
           </Typography>
         </Grid>

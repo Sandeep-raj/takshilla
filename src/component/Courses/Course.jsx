@@ -11,6 +11,7 @@ import {
   IconButton,
   Typography,
 } from "@mui/material";
+import { useNavigate } from "react-router-dom";
 
 import ExpandMoreIcon from "@mui/icons-material/ExpandMore";
 import "./Course.css";
@@ -37,8 +38,10 @@ const BalVidyalay = (props) => {
     setExpanded(!expanded);
   };
 
+  const navigate = useNavigate();
+
   return (
-    <Card sx={{ maxWidth: 300 }} className="course_card">
+    <Card sx={{ minWidth: 300 }} className="course_card">
       <CardHeader
         title="Bal Vidyalay"
         subheader="Two-Year Foundation Program (TYFP) for Class 9th"
@@ -72,7 +75,7 @@ const BalVidyalay = (props) => {
         </table>
       </CardContent>
       <CardActions disableSpacing>
-        <Button>Enroll</Button>
+        <Button onClick={() => navigate("/register")}>Enroll</Button>
         <ExpandMore
           expand={expanded}
           onClick={handleExpandClick}
@@ -109,8 +112,10 @@ const YuvaVidyapeeth = (props) => {
     setExpanded(!expanded);
   };
 
+  const navigate = useNavigate();
+
   return (
-    <Card sx={{ maxWidth: 300 }} className="course_card">
+    <Card sx={{ minWidth: 300 }} className="course_card">
       <CardHeader
         title="Yuva Vidyapeeth"
         subheader="Competitive Edge Program (CEP) for Class 10+"
@@ -139,7 +144,7 @@ const YuvaVidyapeeth = (props) => {
         </table>
       </CardContent>
       <CardActions disableSpacing>
-        <Button>Enroll</Button>
+        <Button onClick={() => navigate("/register")}>Enroll</Button>
         <ExpandMore
           expand={expanded}
           onClick={handleExpandClick}
@@ -176,8 +181,10 @@ const LakshyaKaksha = (props) => {
     setExpanded(!expanded);
   };
 
+  const navigate = useNavigate();
+
   return (
-    <Card sx={{ maxWidth: 300 }} className="course_card">
+    <Card sx={{ minWidth: 300 }} className="course_card">
       <CardHeader
         title="Lakshya Kaksha"
         subheader="Advanced One-Year Program (AYP) for Class 11th"
@@ -206,7 +213,7 @@ const LakshyaKaksha = (props) => {
         </table>
       </CardContent>
       <CardActions disableSpacing>
-        <Button>Enroll</Button>
+        <Button onClick={() => navigate("/register")}>Enroll</Button>
         <ExpandMore
           expand={expanded}
           onClick={handleExpandClick}

@@ -141,7 +141,6 @@ const Contact = () => {
       <div className="contact_center">
         <h1>Our Centers</h1>
         {/* Add Material UI Vertical Tabs to arrange map and adress of 3 centers */}
-
         <Tabs
           variant="scrollable"
           value={selectedTab}
@@ -149,10 +148,8 @@ const Contact = () => {
           aria-label="Vertical tabs example"
           className="vertical-tabs"
         >
-          <Tab label="Kumhrar" />
-          <Tab label="Sipara" />
+          <Tab label="Sampatchak" />
         </Tabs>
-
         {/* Content for each tab */}
         {selectedTab === 0 && (
           <div className="contact_center_detail">
@@ -160,7 +157,7 @@ const Contact = () => {
             <Grid container spacing={4}>
               <Grid item xs={12} sm={12} md={12} lg={6}>
                 <iframe
-                  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3598.091861592869!2d85.11245207497487!3d25.60186357745262!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x39ed59c23a5435ef%3A0x9fef2cc5284754ea!2sGoalghar!5e0!3m2!1sen!2sin!4v1702844729885!5m2!1sen!2sin"
+                  src="https://www.google.com/maps/embed?pb=!1m17!1m12!1m3!1d3599.595699917331!2d85.17823117539344!3d25.5518408774844!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m2!1m1!2zMjXCsDMzJzA2LjYiTiA4NcKwMTAnNTAuOSJF!5e0!3m2!1sen!2sin!4v1709773795855!5m2!1sen!2sin"
                   style={{ border: "0px" }}
                   allowfullscreen=""
                   loading="lazy"
@@ -172,17 +169,17 @@ const Contact = () => {
                   <LocationOnIcon /> Address
                 </h1>
                 <h3>Takshilla Classes</h3>
-                <p>Eco Pk 1, Rajbansi Nagar</p>
-                <p>Patna, Bihar 800015</p>
-                <p>Contact Number - +91-8220570199</p>
+                <p>Abdullah Chak, Near Satyam School</p>
+                <p>Post - Bairya, P.S - Goapalpur</p>
+                <p>Patna, Bihar 800007</p>
+                <p>Contact Number - +91-9905910453</p>
               </Grid>
             </Grid>
           </div>
         )}
 
-        {selectedTab === 1 && (
+        {/* {selectedTab === 1 && (
           <div className="contact_center_detail">
-            {/* Add map and address for Center 1 */}
             <Grid container spacing={4}>
               <Grid item xs={12} sm={12} md={12} lg={6}>
                 <iframe
@@ -204,7 +201,7 @@ const Contact = () => {
               </Grid>
             </Grid>
           </div>
-        )}
+        )} */}
       </div>
     </div>
   );

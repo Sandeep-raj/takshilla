@@ -75,8 +75,7 @@ const RegistrationForm = () => {
                   onChange={handleInputChange}
                   fullWidth
                 >
-                  <MenuItem value={"sipara"}>Sipara</MenuItem>
-                  <MenuItem value={"kumhrar"}>Kumhrar</MenuItem>
+                  <MenuItem value={"sipara"}>Sampatchak</MenuItem>
                 </Select>
               </FormControl>
             </Grid>
@@ -92,16 +91,14 @@ const RegistrationForm = () => {
                   onChange={handleInputChange}
                   fullWidth
                 >
-                  <MenuItem value={"TYFP"}>
-                    Bal Vidyalay - Two-Year Foundation Program (TYFP) for Class
-                    9th
+                  <MenuItem value={"Bal"}>
+                    Bal Vidyalay - for Class 9th/10th
                   </MenuItem>
-                  <MenuItem value={"CEP"}>
-                    Yuva Vidyapeeth Competitive Edge Program (CEP) for Class 10+
+                  <MenuItem value={"Yuva"}>
+                    Yuva Kaksha - for Class 11th/12th
                   </MenuItem>
-                  <MenuItem value={"AYP"}>
-                    Lakshya Kaksha Advanced One-Year Program (AYP) for Class
-                    11th
+                  <MenuItem value={"Lakshya"}>
+                    Lakshya Vidyapeeth - for Class 12th passout
                   </MenuItem>
                 </Select>
               </FormControl>
