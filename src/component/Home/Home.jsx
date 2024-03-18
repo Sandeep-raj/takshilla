@@ -1,10 +1,5 @@
-import { Carousel } from "react-responsive-carousel";
 import "react-responsive-carousel/lib/styles/carousel.min.css";
 import { useNavigate } from "react-router-dom";
-import car1 from "../../assets/images/car1.jpg";
-import car2 from "../../assets/images/car2.jpg";
-import car3 from "../../assets/images/car3.jpg";
-import car4 from "../../assets/images/car4.jpg";
 import rahul from "../../assets/images/rahul.jpg";
 import biru from "../../assets/images/biru.jpg";
 import expert from "../../assets/images/expert.jpg";
@@ -16,6 +11,9 @@ import ScreenSearchDesktopTwoToneIcon from "@mui/icons-material/ScreenSearchDesk
 import SupportAgentTwoToneIcon from "@mui/icons-material/SupportAgentTwoTone";
 import DocumentScannerTwoToneIcon from "@mui/icons-material/DocumentScannerTwoTone";
 import PsychologyTwoToneIcon from "@mui/icons-material/PsychologyTwoTone";
+
+import man from "../../assets/images/man.png";
+import registerNow from "../../assets/images/register.png";
 
 import "./Home.css";
 import {
@@ -52,40 +50,74 @@ const Home = () => {
   const navigate = useNavigate();
   return (
     <>
-      <div className="home_car">
-        <Carousel
-          showArrows={true}
-          autoPlay={true}
-          infiniteLoop={true}
-          interval={3000}
-          showThumbs={false}
-          emulateTouch
-        >
-          <div className="carimg">
-            <img src={car1} alt="car1" />
+      {/* First Page */}
+      <div
+        style={{
+          width: "100%",
+          height: "90vh",
+        }}
+      >
+        <div className="tak_home_text">
+          <h1
+            style={{
+              fontSize: desktopView ? "8vw" : "15vw",
+              paddingTop: desktopView ? "0px" : "50px",
+              marginBottom: desktopView ? "10px" : "5px",
+            }}
+          >
+            Admissions Open
+          </h1>
+
+          <div
+            style={{
+              width: "100%",
+              marginLeft: "40%",
+            }}
+          >
+            <h3
+              style={{
+                fontSize: desktopView ? "2vw" : "15vw",
+                width: "fit-content",
+                margin: "0px",
+                backgroundColor: "yellow",
+              }}
+            >
+              Give a call at +91-9905910453
+            </h3>
           </div>
-          <div className="carimg">
-            <img src={car2} alt="car2" />
+
+          <div
+            style={{
+              width: "100%",
+              marginLeft: "53%",
+            }}
+          >
+            <span style={{ width: "100px" }}>
+              <img
+                src={registerNow}
+                style={{ maxWidth: "100px" }}
+                className="register_now"
+              />
+            </span>
           </div>
-          <div className="carimg">
-            <img src={car3} alt="car3" />
-          </div>
-          <div className="carimg">
-            <img src={car4} alt="car4" />
-          </div>
-        </Carousel>
-        <div className="home_car_text">
-          <h1>Takshilla Classes</h1>
-          <h3>Your Gateway to IIT-JEE Success</h3>
+        </div>
+        <div className="man_home_img">
+          <img
+            src={man}
+            style={{
+              position: "relative",
+              width: desktopView ? "50%" : "70%",
+              height: "100%",
+              left: "18%",
+            }}
+          ></img>
         </div>
       </div>
-
       {/* Programs */}
       <div
         style={{
           width: "100%",
           position: "relative",
-          paddingTop: "20px",
           paddingBottom: "20px",
         }}
       >
