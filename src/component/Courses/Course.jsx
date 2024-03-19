@@ -10,6 +10,7 @@ import {
   Grid,
   IconButton,
   Typography,
+  useMediaQuery,
 } from "@mui/material";
 import { useNavigate } from "react-router-dom";
 
@@ -19,6 +20,7 @@ import balVidyalay from "../../assets/images/balgurukul.jpg";
 import yuva from "../../assets/images/yuva.jpg";
 import lakshya from "../../assets/images/lakshya.jpg";
 import styled from "@emotion/styled";
+import themeObj from "../../assets/theme/theme";
 
 const ExpandMore = styled((props) => {
   const { expand, ...other } = props;
@@ -41,7 +43,11 @@ const BalVidyalay = (props) => {
   const navigate = useNavigate();
 
   return (
-    <Card sx={{ minWidth: 300 }} className="course_card">
+    <Card
+      sx={{ minWidth: 300 }}
+      style={{ backgroundColor: themeObj.themeColor.xlight }}
+      className="course_card"
+    >
       <CardHeader
         title="Bal Vidyalay"
         subheader="Two-Year Foundation Program (TYFP) for Class 9th"
@@ -115,7 +121,11 @@ const YuvaVidyapeeth = (props) => {
   const navigate = useNavigate();
 
   return (
-    <Card sx={{ minWidth: 300 }} className="course_card">
+    <Card
+      sx={{ minWidth: 300 }}
+      style={{ backgroundColor: themeObj.themeColor.xlight }}
+      className="course_card"
+    >
       <CardHeader
         title="Yuva Vidyapeeth"
         subheader="Competitive Edge Program (CEP) for Class 10+"
@@ -184,7 +194,11 @@ const LakshyaKaksha = (props) => {
   const navigate = useNavigate();
 
   return (
-    <Card sx={{ minWidth: 300 }} className="course_card">
+    <Card
+      sx={{ minWidth: 300 }}
+      style={{ backgroundColor: themeObj.themeColor.xlight }}
+      className="course_card"
+    >
       <CardHeader
         title="Lakshya Kaksha"
         subheader="Advanced One-Year Program (AYP) for Class 11th"
@@ -242,10 +256,19 @@ const LakshyaKaksha = (props) => {
 };
 
 const Course = () => {
+  const desktopView = useMediaQuery("(min-width:1200px)");
   return (
     <div className="course_root">
       <div className="course_parallax">
-        <Typography variant="h1">Our Courses</Typography>
+        <Typography
+          variant="h1"
+          style={{
+            fontSize: desktopView ? "8vw" : "15vw",
+            color: themeObj.themeColor.light,
+          }}
+        >
+          Our Courses
+        </Typography>
       </div>
       <Grid container>
         <Grid item xs={12} sm={12} md={12} lg={6}>

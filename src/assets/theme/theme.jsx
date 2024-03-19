@@ -2,10 +2,10 @@ import createTheme from "@mui/material/styles/createTheme";
 
 const theme = createTheme({});
 const themeColor = {
-  xdark: "#05386b",
+  xdark: "#07316b",
   dark: "#379683",
   normal: "#5cdb95",
-  light: "#8ee4af",
+  light: "#009dff",
   xlight: "#edf5e1",
 };
 

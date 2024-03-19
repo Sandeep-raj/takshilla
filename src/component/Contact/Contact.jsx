@@ -10,6 +10,7 @@ import {
 import "./Contact.css";
 import LocationOnIcon from "@mui/icons-material/LocationOn";
 import { useState } from "react";
+import themeObj from "../../assets/theme/theme";
 
 const Contact = () => {
   const [selectedTab, setSelectedTab] = useState(0);
@@ -45,18 +46,26 @@ const Contact = () => {
   return (
     <div className="contact_root">
       <div className="contact_parallax">
-        <Typography variant="h1">Contact Us</Typography>
+        <Typography
+          variant="h1"
+          style={{ fontSize: "8vw", color: themeObj.themeColor.light }}
+        >
+          Contact Us
+        </Typography>
       </div>
 
       <div style={{ width: "90%", margin: "auto", marginTop: "30px" }}>
-        <Paper elevation={4}>
+        <Paper
+          elevation={4}
+          style={{ backgroundColor: themeObj.themeColor.xlight }}
+        >
           <div className="contact_enq_form">
             <Typography
               variant="h3"
               textAlign={"center"}
-              style={{ padding: "5px" }}
+              style={{ padding: "15px" }}
             >
-              Pen Your Questions
+              Have Queries?
             </Typography>
             <form onSubmit={handleSubmit}>
               <Grid container spacing={2}>
@@ -137,6 +146,8 @@ const Contact = () => {
           </div>
         </Paper>
       </div>
+      <br />
+      <hr />
 
       <div className="contact_center">
         <h1>Our Centers</h1>
@@ -146,9 +157,12 @@ const Contact = () => {
           value={selectedTab}
           onChange={(event, newValue) => setSelectedTab(newValue)}
           aria-label="Vertical tabs example"
-          className="vertical-tabs"
+          // className="vertical-tabs"
         >
-          <Tab label="Sampatchak" />
+          <Tab
+            style={{ color: themeObj.themeColor.xdark, fontWeight: "bolder" }}
+            label="Sampatchak"
+          />
         </Tabs>
         {/* Content for each tab */}
         {selectedTab === 0 && (
@@ -165,14 +179,24 @@ const Contact = () => {
                 ></iframe>
               </Grid>
               <Grid item xs={12} sm={12} md={12} lg={6}>
-                <h1>
-                  <LocationOnIcon /> Address
-                </h1>
-                <h3>Takshilla Classes</h3>
-                <p>Abdullah Chak, Near Satyam School</p>
-                <p>Post - Bairya, P.S - Goapalpur</p>
-                <p>Patna, Bihar 800007</p>
-                <p>Contact Number - +91-9905910453</p>
+                <Paper
+                  elevation={5}
+                  style={{
+                    padding: "10px",
+                    backgroundColor: themeObj.themeColor.xlight,
+                  }}
+                >
+                  <h1>
+                    <LocationOnIcon /> Address
+                  </h1>
+                  <div border="1px">
+                    <h3>Takshilla Classes</h3>
+                    <p>Abdullah Chak, Near Satyam School</p>
+                    <p>Post - Bairya, P.S - Goapalpur</p>
+                    <p>Patna, Bihar 800007</p>
+                    <p>Contact Number - +91-9905910453</p>
+                  </div>
+                </Paper>
               </Grid>
             </Grid>
           </div>

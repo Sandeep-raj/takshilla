@@ -33,6 +33,7 @@ import {
 } from "@mui/material";
 import { useState } from "react";
 import RegistrationForm from "../Register/RegisterForm";
+import themeObj from "../../assets/theme/theme";
 
 const Home = () => {
   const [modalopen, setModalOpen] = useState(false);
@@ -60,8 +61,9 @@ const Home = () => {
         <div className="tak_home_text">
           <h1
             style={{
-              fontSize: desktopView ? "8vw" : "15vw",
-              paddingTop: desktopView ? "0px" : "50px",
+              fontSize: desktopView ? "8vw" : "10vw",
+              paddingTop: desktopView ? "50px" : "50px",
+              marginLeft: desktopView ? "200px" : "0px",
               marginBottom: desktopView ? "10px" : "5px",
             }}
           >
@@ -70,26 +72,39 @@ const Home = () => {
 
           <div
             style={{
-              width: "100%",
-              marginLeft: "40%",
+              width: "fit-content",
+              marginLeft: desktopView ? "15%" : "0%",
             }}
           >
             <h3
               style={{
-                fontSize: desktopView ? "2vw" : "15vw",
+                fontSize: desktopView ? "3vw" : "5vw",
                 width: "fit-content",
-                margin: "0px",
-                backgroundColor: "yellow",
+                margin: desktopView ? "0px" : "30px",
+                backgroundColor: themeObj.themeColor.xdark,
+                color: "white",
+                padding: "10px",
               }}
             >
-              Give a call at +91-9905910453
+              Call us on <b>+91-9905910453</b>
             </h3>
           </div>
 
           <div
             style={{
-              width: "100%",
-              marginLeft: "53%",
+              marginLeft: desktopView ? "58%" : "45%",
+              marginTop: "-5%",
+              width: "fit-content",
+            }}
+          >
+            <h2>OR</h2>
+          </div>
+
+          <div
+            style={{
+              width: "fit-content",
+              marginLeft: "63%",
+              marginTop: desktopView ? "-70px" : "-50px",
             }}
           >
             <span style={{ width: "100px" }}>
@@ -106,12 +121,13 @@ const Home = () => {
             src={man}
             style={{
               position: "relative",
-              width: desktopView ? "50%" : "70%",
+              width: desktopView ? "50%" : "100%",
               height: "100%",
-              left: "18%",
+              left: desktopView ? "18%" : "0%",
             }}
           ></img>
         </div>
+        <hr></hr>
       </div>
       {/* Programs */}
       <div
@@ -122,12 +138,15 @@ const Home = () => {
         }}
       >
         <div style={{ width: "90%", margin: "auto" }}>
-          <Typography variant={desktopView ? "h4" : "h3"}>
+          <Typography
+            variant={desktopView ? "h4" : "h3"}
+            style={{ marginTop: "15px", fontWeight: "bolder" }}
+          >
             Our Courses
           </Typography>
           <Typography
             variant={desktopView ? "h5" : "h5"}
-            marginTop={5}
+            marginTop={2}
             marginBottom={5}
           >
             Experience a nurturing learning environment at Takshilla Classes,
@@ -141,7 +160,11 @@ const Home = () => {
         <div className="home_prog_root">
           <Grid container spacing={4}>
             <Grid item xs={12} sm={12} md={12} lg={4}>
-              <Paper elevation={5} className="parent-container">
+              <Paper
+                elevation={5}
+                style={{ backgroundColor: themeObj.themeColor.xlight }}
+                className="parent-container"
+              >
                 {/* Parent div with background image and 50% opacity */}
                 <div
                   className="background-overlay"
@@ -156,7 +179,11 @@ const Home = () => {
               </Paper>
             </Grid>
             <Grid item xs={12} sm={12} md={12} lg={4}>
-              <Paper elevation={5} className="parent-container">
+              <Paper
+                elevation={5}
+                style={{ backgroundColor: themeObj.themeColor.xlight }}
+                className="parent-container"
+              >
                 {/* Parent div with background image and 50% opacity */}
                 <div
                   className="background-overlay"
@@ -171,7 +198,11 @@ const Home = () => {
               </Paper>
             </Grid>
             <Grid item xs={12} sm={12} md={12} lg={4}>
-              <Paper elevation={5} className="parent-container">
+              <Paper
+                elevation={5}
+                style={{ backgroundColor: themeObj.themeColor.xlight }}
+                className="parent-container"
+              >
                 {/* Parent div with background image and 50% opacity */}
                 <div
                   className="background-overlay"
@@ -198,11 +229,15 @@ const Home = () => {
           EXPLORE MORE
         </button>
       </div>
+      <hr></hr>
 
       {/* Our Faculty */}
       <div style={{ width: "100%", position: "relative", paddingTop: "20px" }}>
         <div className="home_faculty_root">
-          <Typography variant={desktopView ? "h4" : "h3"}>
+          <Typography
+            variant={desktopView ? "h4" : "h3"}
+            style={{ fontWeight: "bolder", marginBottom: "12px" }}
+          >
             Meet Our Faculty
           </Typography>
           <Grid container spacing={5} alignItems={"center"}>
@@ -233,7 +268,10 @@ const Home = () => {
                 className="home_faculty_img"
                 style={{ backgroundImage: `url(${expert})` }}
               ></div>
-              <div className="home_faculty_name">And Our Expert Team</div>
+              <div className="home_faculty_name">
+                <span style={{ marginLeft: "20px" }}>And Our</span>
+                <br /> Expert Team
+              </div>
             </Grid>
           </Grid>
           <button
@@ -248,11 +286,15 @@ const Home = () => {
           </button>
         </div>
       </div>
+      <hr></hr>
 
       {/* Admission Process */}
       <div style={{ width: "100%", position: "relative", paddingTop: "20px" }}>
         <div style={{ width: "90%", margin: "auto" }}>
-          <Typography variant={desktopView ? "h4" : "h3"}>
+          <Typography
+            variant={desktopView ? "h4" : "h3"}
+            style={{ fontWeight: "bolder" }}
+          >
             Admission Process at Takshilla Classes
           </Typography>
           <div className="home_proc_root">
@@ -275,7 +317,13 @@ const Home = () => {
                 </Paper>
               </Grid>
               <Grid item xs={12} sm={12} md={12} lg={7}>
-                <Paper style={{ width: "100%", height: "100%" }}>
+                <Paper
+                  style={{
+                    width: "100%",
+                    height: "100%",
+                    backgroundColor: themeObj.themeColor.xlight,
+                  }}
+                >
                   <div className="home_proc_list">
                     <List>
                       <ListItem
@@ -310,6 +358,7 @@ const Home = () => {
                                 Explore our course page to find the perfect fit
                                 for your academic journey at Takshilla Classes.
                               </Typography>
+                              <br />
                               <Button
                                 variant="outlined"
                                 className="home_proc_listitem_btn"
@@ -462,6 +511,7 @@ const Home = () => {
                                 </span>
                                 .
                               </Typography>
+                              <br />
                               <Button
                                 variant="outlined"
                                 className="home_proc_listitem_btn"

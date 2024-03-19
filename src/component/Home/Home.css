@@ -13,7 +13,7 @@
 
 @keyframes register_scale {
     0% { max-width: 100px;}
-    50% {max-width: 150px;}
+    50% {max-width: 130px;}
     100% {max-width: 100px;}
 }
 
@@ -22,7 +22,6 @@
     animation-duration: 3s;
     animation-iteration-count: infinite;
     width: fit-content;
-    margin-top: 10px;
 }
 
 .home_prog_root {
@@ -129,7 +128,7 @@
 }
 
 .home_proc_listitem_btn {
-    margin-left: 10px !important;
+    /* margin-left: 10px !important; */
 }
 
 .home_proc_listitem:hover .home_proc_listitem_img {
@@ -175,6 +174,7 @@
 
 .home_faculty_name {
     display: none;
+    padding-left: 150px;
 }
 
 .home_faculty_img:hover+.home_faculty_name {
