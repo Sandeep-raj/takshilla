@@ -1,13 +1,23 @@
-import { Grid, Typography } from "@mui/material";
+import { Grid, Typography, useMediaQuery } from "@mui/material";
 import ourMissioin from "../../assets/images/our_mission.png";
 import educator from "../../assets/images/educator.png";
+import themeObj from "../../assets/theme/theme";
 import "./About.css";
 
 const About = () => {
+  const desktopView = useMediaQuery("(min-width:1200px)");
   return (
     <div className="about_root">
       <div className="about_parallax">
-        <Typography variant="h1">About Us</Typography>
+        <Typography
+          variant="h1"
+          style={{
+            fontSize: desktopView ? "8vw" : "15vw",
+            color: themeObj.themeColor.light,
+          }}
+        >
+          About Us
+        </Typography>
       </div>
       <Grid container className="about_grid">
         <Grid item xs={12} sm={12} md={12} lg={12}>
@@ -19,7 +29,7 @@ const About = () => {
           </h3>
         </Grid>
         <Grid item xs={12} sm={12} md={6} lg={6}>
-          <h1>Our Mission</h1>
+          <h1 style={{ fontSize: desktopView ? "2vw" : "8vw" }}>Our Mission</h1>
           <p>
             At Takshilla, our mission is to nurture talent, ignite curiosity,
             and instill the skills needed for conquering the challenges of
@@ -34,7 +44,9 @@ const About = () => {
           </div>
         </Grid>
         <Grid item xs={12} sm={12} md={6} lg={6}>
-          <h1>Why Choose Takshilla?</h1>
+          <h1 style={{ fontSize: desktopView ? "2vw" : "8vw" }}>
+            Why Choose Takshilla?
+          </h1>
           <ul>
             <li>
               Proven Track Record: Our consistent track record of successful

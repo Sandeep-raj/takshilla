@@ -11,35 +11,61 @@ const Footer = () => {
     <div className="footer_root">
       <Grid container spacing={2} className="rootgrid">
         <Grid item xs={12} sm={12} md={12} lg={6}>
-          <Typography variant={!desktopView ? "h4" : "h5"}>
+          <Typography
+            variant={!desktopView ? "h4" : "h5"}
+            style={{ fontWeight: "bolder" }}
+          >
             Contact Information Address:
           </Typography>
-          <Typography variant={!desktopView ? "p" : "p"}>
+          <Typography
+            variant={!desktopView ? "p" : "p"}
+            style={{ marginLeft: "15px" }}
+          >
             Takshilla Classes, Abdullah Chak, Near Satyam School, Post - Bairya,
             P.S - Gopalpur, Patna 800007
           </Typography>
-          <Typography variant={!desktopView ? "h4" : "h5"}>
+          <br />
+          <br />
+          <Typography
+            variant={!desktopView ? "h4" : "h5"}
+            style={{ fontWeight: "bolder" }}
+          >
             Contact Numbers:
           </Typography>
-          <Typography variant={!desktopView ? "p" : "h7"}>
+          <Typography
+            variant={!desktopView ? "p" : "h7"}
+            style={{ marginLeft: "15px" }}
+          >
             General Enquiries: +91-9905910453
             <br />
           </Typography>
-          <Typography variant={!desktopView ? "p" : "h7"}>
+          <Typography
+            variant={!desktopView ? "p" : "h7"}
+            style={{ marginLeft: "15px" }}
+          >
             Admission Helpline: +91-9905910453
             <br />
           </Typography>
-          <Typography variant={!desktopView ? "p" : "h7"}>
+          <Typography
+            variant={!desktopView ? "p" : "h7"}
+            style={{ marginLeft: "15px" }}
+          >
             Email: takshilla.info@gmail.com
             <br />
           </Typography>
-          <Typography variant={!desktopView ? "p" : "h7"}>
+          <Typography
+            variant={!desktopView ? "p" : "h7"}
+            style={{ marginLeft: "15px" }}
+          >
             Website: www.takshilla.in
             <br />
           </Typography>
         </Grid>
         <Grid item xs={12} sm={12} md={12} lg={6}>
-          <Typography variant={!desktopView ? "h6" : "h4"}>
+          <Typography
+            variant={!desktopView ? "h6" : "h4"}
+            style={{ fontWeight: "bolder" }}
+          >
             Follow Us
           </Typography>
           <Typography variant={!desktopView ? "h5" : "h7"}>

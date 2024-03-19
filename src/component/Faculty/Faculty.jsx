@@ -1,16 +1,28 @@
-import { Grid, Paper, Typography } from "@mui/material";
+import { Grid, Paper, Typography, useMediaQuery } from "@mui/material";
 import "./Faculty.css";
 import rahulImg from "../../assets/images/rahul.jpg";
 import biruImg from "../../assets/images/biru.jpg";
+import themeObj from "../../assets/theme/theme";
 
 const Faculty = () => {
+  const desktopView = useMediaQuery("(min-width:1200px)");
   return (
     <div className="faculty_root">
       <div className="faculty_parallax">
-        <Typography variant="h1">Our Faculty</Typography>
+        <Typography
+          variant="h1"
+          style={{
+            fontSize: desktopView ? "8vw" : "15vw",
+            color: themeObj.themeColor.light,
+          }}
+        >
+          Our Faculty
+        </Typography>
       </div>
       <div className="faculty_content">
-        <h1>Meet Our Esteemed Faculty at Takshilla Classes</h1>
+        <h1 style={{ color: themeObj.themeColor.xdark }}>
+          Meet Our Esteemed Faculty at Takshilla Classes
+        </h1>
         <Grid
           container
           display={"flex"}
@@ -24,7 +36,10 @@ const Faculty = () => {
             </div>
           </Grid>
           <Grid item xs={12} sm={12} md={8} lg={8}>
-            <Paper elevation={5}>
+            <Paper
+              elevation={5}
+              style={{ backgroundColor: themeObj.themeColor.xlight }}
+            >
               <div className="faculty_item_txt">
                 <h2>Biru Raj - Physics Virtuoso</h2>
                 <p>
@@ -41,7 +56,10 @@ const Faculty = () => {
             </Paper>
           </Grid>
           <Grid item xs={12} sm={12} md={8} lg={8}>
-            <Paper elevation={5}>
+            <Paper
+              elevation={5}
+              style={{ backgroundColor: themeObj.themeColor.xlight }}
+            >
               <div className="faculty_item_txt">
                 <h2>Rahul Raj - Mathematics Maestro</h2>
                 <p>
@@ -63,7 +81,10 @@ const Faculty = () => {
             </div>
           </Grid>
           <Grid item xs={12} sm={12} md={12} lg={12}>
-            <Paper elevation={5}>
+            <Paper
+              elevation={5}
+              style={{ backgroundColor: themeObj.themeColor.xlight }}
+            >
               <div className="faculty_item_txt">
                 <h2>Expert Team for Class 9-10 and IIT JEE Preparation</h2>
                 <p>

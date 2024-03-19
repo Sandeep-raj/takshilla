@@ -1,18 +1,27 @@
-.home_car {
+.tak_home_text {
+    margin: auto;
+    width: 90%;
+    height: 40vh;
     position: relative;
-    margin-bottom: 20px;
+}
+.man_home_img {
+    margin: auto;
+    height: 50vh;
+    width: 70%;
+    position: relative;
 }
 
-.home_car_text {
-    position: absolute;
-    top: 15%;
-    left: 15%;
-    font-size: 200%;
-    color: var(--x-dark-color);
+@keyframes register_scale {
+    0% { max-width: 100px;}
+    50% {max-width: 130px;}
+    100% {max-width: 100px;}
 }
 
-.carimg img {
-    height: 100vh;
+.register_now {
+    animation-name: register_scale;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+    width: fit-content;
 }
 
 .home_prog_root {
@@ -119,7 +128,7 @@
 }
 
 .home_proc_listitem_btn {
-    margin-left: 10px !important;
+    /* margin-left: 10px !important; */
 }
 
 .home_proc_listitem:hover .home_proc_listitem_img {
@@ -165,6 +174,7 @@
 
 .home_faculty_name {
     display: none;
+    padding-left: 150px;
 }
 
 .home_faculty_img:hover+.home_faculty_name {

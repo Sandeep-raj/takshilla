@@ -15,6 +15,7 @@ import {
   FormControlLabel,
   Radio,
 } from "@mui/material";
+import themeObj from "../../assets/theme/theme";
 
 const RegistrationForm = () => {
   const [formData, setFormData] = useState({
@@ -58,8 +59,20 @@ const RegistrationForm = () => {
 
   return (
     <Container component="main" maxWidth="md">
-      <Paper elevation={5} style={{ padding: 20, marginTop: 50 }}>
-        <Typography variant="h5" component="div" align="center">
+      <Paper
+        elevation={5}
+        style={{
+          padding: 20,
+          marginTop: 50,
+          backgroundColor: themeObj.themeColor.xlight,
+        }}
+      >
+        <Typography
+          variant="h5"
+          component="div"
+          align="center"
+          style={{ fontWeight: "bolder", marginBottom: "15px" }}
+        >
           Registration Form
         </Typography>
         <form onSubmit={handleSubmit}>
@@ -242,7 +255,7 @@ const RegistrationForm = () => {
               fullWidth
               variant="contained"
               color="primary"
-              style={{ marginTop: 20 }}
+              style={{ marginTop: 20, marginLeft: "25px" }}
             >
               Register
             </Button>
